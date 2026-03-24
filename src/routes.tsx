@@ -12,6 +12,7 @@ const AboutPage = React.lazy(() => import('./pages/AboutPage'));
 const FAQPage = React.lazy(() => import('./pages/FAQPage'));
 const DashboardPage = React.lazy(() => import('./pages/DashboardPage'));
 const IssuesPage = React.lazy(() => import('./pages/IssuesPage'));
+const SearchPage = React.lazy(() => import('./pages/SearchPage'));
 const IssueDetailsPage = React.lazy(() => import('./pages/IssueDetailsPage'));
 const TopMinersPage = React.lazy(() => import('./pages/TopMinersPage'));
 const RepositoriesPage = React.lazy(() => import('./pages/RepositoriesPage'));
@@ -35,6 +36,7 @@ const routesArray: AppRoute[] = [
     element: <IssueDetailsPage />,
   },
   { name: 'issues', path: '/issues/:tab?', element: <IssuesPage /> },
+  { name: 'search', path: '/search', element: <SearchPage /> },
   { name: 'top-miners', path: '/top-miners', element: <TopMinersPage /> },
   {
     name: 'repositories',
